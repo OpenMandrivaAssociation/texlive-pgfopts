@@ -1,3 +1,9 @@
+# revision 23320
+# category Package
+# catalog-ctan /macros/latex/contrib/pgfopts
+# catalog-date 2011-06-03 00:21:14 +0200
+# catalog-license lppl1.3
+# catalog-version 2.1
 Name:		texlive-pgfopts
 Version:	2.1
 Release:	1
@@ -48,6 +54,7 @@ package.
 #- source
 %doc %{_texmfdistdir}/source/latex/pgfopts/pgfopts.dtx
 %doc %{_texmfdistdir}/source/latex/pgfopts/pgfopts.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
