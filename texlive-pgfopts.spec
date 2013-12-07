@@ -6,7 +6,7 @@
 # catalog-version 2.1
 Name:		texlive-pgfopts
 Version:	2.1
-Release:	3
+Release:	4
 Summary:	LaTeX package options with pgfkeys
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pgfopts
