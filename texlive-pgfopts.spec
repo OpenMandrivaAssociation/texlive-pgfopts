@@ -1,12 +1,6 @@
-# revision 23320
-# category Package
-# catalog-ctan /macros/latex/contrib/pgfopts
-# catalog-date 2011-06-03 00:21:14 +0200
-# catalog-license lppl1.3
-# catalog-version 2.1
 Name:		texlive-pgfopts
-Version:	2.1
-Release:	10
+Version:	2.1a
+Release:	1
 Summary:	LaTeX package options with pgfkeys
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pgfopts
@@ -38,12 +32,10 @@ package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/pgfopts/pgfopts.sty
-%doc %{_texmfdistdir}/doc/latex/pgfopts/README
-%doc %{_texmfdistdir}/doc/latex/pgfopts/pgfopts.pdf
+%{_texmfdistdir}/tex/latex/pgfopts
+%doc %{_texmfdistdir}/doc/latex/pgfopts
 #- source
-%doc %{_texmfdistdir}/source/latex/pgfopts/pgfopts.dtx
-%doc %{_texmfdistdir}/source/latex/pgfopts/pgfopts.ins
+%doc %{_texmfdistdir}/source/latex/pgfopts
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,17 +46,3 @@ package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1-2
-+ Revision: 754818
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.1-1
-+ Revision: 719243
-- texlive-pgfopts
-- texlive-pgfopts
-- texlive-pgfopts
-- texlive-pgfopts
-
