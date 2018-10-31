@@ -1,6 +1,6 @@
 Name:		texlive-pgfopts
 Version:	2.1a
-Release:	1
+Release:	2
 Summary:	LaTeX package options with pgfkeys
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pgfopts
